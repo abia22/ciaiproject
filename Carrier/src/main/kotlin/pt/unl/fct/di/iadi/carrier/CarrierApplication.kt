@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class MessagesApplication
+class CarrierApplication
 
 fun main(args: Array<String>) {
-    runApplication<MessagesApplication>(*args)
+    runApplication<CarrierApplication>(*args)
 }
