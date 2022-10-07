@@ -1,4 +1,4 @@
-package pt.unl.fct.di.iadi.messages.presentation
+package pt.unl.fct.di.iadi.carrier.presentation.message
 
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.ArraySchema

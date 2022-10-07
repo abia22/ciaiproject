@@ -1,3 +1,5 @@
+package pt.unl.fct.di.iadi.carrier.presentation.mailbox
+
 import io.swagger.v3.oas.annotations.media.Schema
 
 

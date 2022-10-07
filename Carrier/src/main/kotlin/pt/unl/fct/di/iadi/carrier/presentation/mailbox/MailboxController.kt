@@ -1,6 +1,7 @@
-package pt.unl.fct.di.iadi.messages.presentation
+package pt.unl.fct.di.iadi.carrier.presentation.mailbox
 
-import MailboxCreateDTO
+import pt.unl.fct.di.iadi.carrier.presentation.message.MessageCreateDTO
+import pt.unl.fct.di.iadi.carrier.presentation.message.MessageListDTO
 
 class MailboxController: MailboxAPI {
     override fun createMailbox(mailbox: MailboxCreateDTO) {

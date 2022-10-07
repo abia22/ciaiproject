@@ -1,6 +1,5 @@
-package pt.unl.fct.di.iadi.messages.presentation
+package pt.unl.fct.di.iadi.carrier.presentation.mailbox
 
-import MailboxCreateDTO
 import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.media.ArraySchema
 import io.swagger.v3.oas.annotations.media.Content
@@ -8,6 +7,8 @@ import io.swagger.v3.oas.annotations.media.Schema
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
 import org.springframework.web.bind.annotation.*
+import pt.unl.fct.di.iadi.carrier.presentation.message.MessageCreateDTO
+import pt.unl.fct.di.iadi.carrier.presentation.message.MessageListDTO
 import java.util.*
 
 @RequestMapping("mailboxes")
