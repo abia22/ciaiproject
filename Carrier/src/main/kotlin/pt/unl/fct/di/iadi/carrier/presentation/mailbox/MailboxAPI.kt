@@ -49,6 +49,5 @@ interface MailboxAPI {
     @PostMapping("/{id}/messages")
     fun addOneMessage(@PathVariable id:Long, @RequestBody value: MessageCreateDTO):Unit
 
-
 }
 
