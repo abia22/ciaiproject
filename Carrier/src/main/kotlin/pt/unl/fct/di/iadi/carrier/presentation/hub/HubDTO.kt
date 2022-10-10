@@ -12,7 +12,7 @@ data class HubDTO(
     val packages: List<Long>
 )
 
-data class listHubDTO(val code:Long,val name:String)
+data class ListHubDTO(val code:Long,val name:String)
 
 
 
