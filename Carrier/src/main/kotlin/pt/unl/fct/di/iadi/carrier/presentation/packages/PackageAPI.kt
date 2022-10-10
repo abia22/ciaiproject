@@ -21,26 +21,26 @@ interface PackageAPI {
         ApiResponse(responseCode = "400", description = "Bad request", content = [Content()])]
     )
     @PostMapping("")
-    fun createMailbox(@RequestBody package1: PackageCreateDTO)
+    fun createPackage(@RequestBody package1: PackageCreateDTO)
 
     @Operation(summary = "Delete Package")
     @ApiResponses(value = [
         ApiResponse(responseCode = "200", description = "Deleted Package", content = [(Content())]),
         ApiResponse(responseCode = "400", description = "Bad request", content = [Content()])]
     )
-    @PostMapping("/{id}")
-    fun deleteMailbox(@PathVariable id:Long)
+    @PostMapping("{id}")
+    fun deletePackage(@PathVariable id:Long)
 
 
     @Operation(summary = "Get one Package given an Id")
     @ApiResponses(value = [
-        ApiResponse(responseCode = "200", description = "Found the message", content = [
+        ApiResponse(responseCode = "200", description = "Found the package", content = [
             (Content(mediaType = "application/json", schema = Schema(implementation = PackageDTO::class)))]),
         ApiResponse(responseCode = "400", description = "Bad request", content = [Content()]),
-        ApiResponse(responseCode = "404", description = "Did not find the sought message", content = [Content()])]
+        ApiResponse(responseCode = "404", description = "Did not find the package", content = [Content()])]
     )
     @GetMapping("{id}")
-    fun getOne(@PathVariable id: Long): Optional<PackageDTO>
+    fun getPackage(@PathVariable id: Long): Optional<PackageDTO>
 
     @Operation(summary = "Update one Package")
     @ApiResponses(value = [
@@ -49,5 +49,5 @@ interface PackageAPI {
         ApiResponse(responseCode = "404", description = "Did not find any package", content = [Content()])]
     )
     @PutMapping("{id}")
-    fun updateOne(@PathVariable id: Long):Unit
+    fun updatePackage(@PathVariable id: Long):Unit
 }

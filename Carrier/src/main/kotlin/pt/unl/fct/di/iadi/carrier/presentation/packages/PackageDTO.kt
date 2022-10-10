@@ -18,8 +18,10 @@ data class DimensionsDTO(
     val length: Float)
 
 data class PackageCreateDTO(val description:String, val weight: Float, val origin: String,
-                            val destination: String, val dimension: DimensionsDTO
-)
+                            val destination: String, val dimension: DimensionsDTO)
+
+data class ListPackageDTO(val id: Long,val description:String, val weight: Float, val origin: String,
+                          val destination: String, val dimension: DimensionsDTO)
 
 
 

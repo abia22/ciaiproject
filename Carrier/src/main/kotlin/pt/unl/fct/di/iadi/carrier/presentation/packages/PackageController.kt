@@ -3,19 +3,20 @@ package pt.unl.fct.di.iadi.carrier.presentation.packages
 import java.util.*
 
 class PackageController: PackageAPI {
-    override fun createMailbox(package1: PackageCreateDTO) {
+
+    override fun createPackage(package1: PackageCreateDTO) {
         TODO("Not yet implemented")
     }
 
-    override fun deleteMailbox(id: Long) {
+    override fun deletePackage(id: Long) {
         TODO("Not yet implemented")
     }
 
-    override fun getOne(id: Long): Optional<PackageDTO> {
+    override fun getPackage(id: Long): Optional<PackageDTO> {
         TODO("Not yet implemented")
     }
 
-    override fun updateOne(id: Long) {
+    override fun updatePackage(id: Long) {
         TODO("Not yet implemented")
     }
 }
