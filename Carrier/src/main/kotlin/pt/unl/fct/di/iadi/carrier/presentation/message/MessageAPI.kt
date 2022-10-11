@@ -31,7 +31,7 @@ interface MessageAPI {
     @GetMapping("{id}")
     fun getOne(@PathVariable id: Long): Optional<MessageDTO>
 
-    @Operation(summary = "Update one message")
+    /*@Operation(summary = "Update one message")
     @ApiResponses(value = [
         ApiResponse(responseCode = "202", description = "Updated the message", content = [Content()]),
         ApiResponse(responseCode = "400", description = "Bad request", content = [Content()]),
@@ -47,6 +47,6 @@ interface MessageAPI {
         ApiResponse(responseCode = "404", description = "Did not find any message", content = [Content()])]
     )
     @DeleteMapping("{id}")
-    fun deleteOne(@PathVariable id: Long):Unit
+    fun deleteOne(@PathVariable id: Long):Unit */
 }
 

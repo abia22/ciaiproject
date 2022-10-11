@@ -1,12 +1,10 @@
 package pt.unl.fct.di.iadi.carrier.presentation.hub
 
-class HubController: HubAPI {
+import pt.unl.fct.di.iadi.carrier.service.HubService
 
-    override fun listPackagesInHubs(code: Long) {
-        TODO("Not yet implemented")
-    }
+class HubController(val hubs: HubService): HubAPI {
 
-    override fun listHubs() {
-        TODO("Not yet implemented")
-    }
+    override fun listPackagesInHubs(code: Long) = hubs.listPackagesInHubs(code)
+
+    override fun listHubs() = hubs.listHubs()
 }

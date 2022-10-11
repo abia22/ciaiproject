@@ -1,12 +1,11 @@
 package pt.unl.fct.di.iadi.carrier.presentation.truck
 
 import org.springframework.web.bind.annotation.RestController
+import pt.unl.fct.di.iadi.carrier.service.TruckService
 
 @RestController
-class TruckController: TruckAPI {
+class TruckController(val trucks: TruckService): TruckAPI {
 
-    override fun getAll(): Collection<TruckListDTO> {
-        TODO("Not yet implemented")
-    }
+    override fun getAll(): Collection<TruckListDTO> = trucks.getAll()
 
 }
